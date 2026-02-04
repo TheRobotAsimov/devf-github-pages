@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>¿Qué es GitHub Pages?</title>
+    <meta name="description" content="Explicación breve en español sobre GitHub Pages y cómo empezar." />
+    <style>
+        :root{
+            --bg:#f7fafc;
+            --card:#fff;
+            --accent:#0366d6;
+            --muted:#6b7280
+        }
+        body{
+            font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+            background:var(--bg);
+            color:#111;
+            margin:0;
+            padding:32px
+        }
+        .container{
+            max-width:900px;
+            margin:0 auto
+        }
+        .card{
+            background:var(--card);
+            padding:28px;
+            border-radius:10px;
+            box-shadow:0 6px 18px rgba(13,24,39,0.06)
+        }
+        h1{
+            margin:0 0 8px;
+            color:var(--accent)
+        }
+        p.lead{
+            margin-top:0;
+            color:var(--muted)
+        }
+        ul{
+            padding-left:1.2rem
+        }
+        li{
+            margin-bottom:8px
+        }
+        .steps{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+            gap:12px;margin-top:18px
+        }
+        .step{
+            background:#f1f5f9;
+            padding:12px;
+            border-radius:8px
+        }
+        a.button{
+            display:inline-block;
+            margin-top:18px;
+            padding:10px 14px;
+            background:var(--accent);color:#fff;
+            border-radius:8px;text-decoration:none
+        }
+        footer{
+            margin-top:18px;
+            font-size:13px;
+            color:var(--muted)
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>¿Qué es GitHub Pages?</h1>
+            <p class="lead">GitHub Pages es un servicio gratuito de GitHub para alojar sitios web estáticos directamente desde un repositorio. Es ideal para páginas personales, documentación, blogs simples y demos.</p>
+
+            <h2>¿Para quién es útil?</h2>
+            <ul>
+                <li>Desarrolladores que quieren publicar demos o portafolios rápidamente.</li>
+                <li>Proyectos que necesitan documentación alojada junto al código.</li>
+                <li>Usuarios que desean un sitio estático sin gestionar servidores.</li>
+            </ul>
+
+            <h2>Características principales</h2>
+            <ul>
+                <li>Alojamiento gratuito desde tu repositorio GitHub.</li>
+                <li>Soporte para dominios personalizados y HTTPS.</li>
+                <li>Integración con Jekyll para generar sitios estáticos si lo deseas.</li>
+            </ul>
+
+            <h2>Cómo empezar (rápido)</h2>
+            <div class="steps">
+                <div class="step">
+                    <strong>Paso 1</strong>
+                    <div>Crear un repositorio público o usar la rama `gh-pages`.</div>
+                </div>
+                <div class="step">
+                    <strong>Paso 2</strong>
+                    <div>Agregar los archivos estáticos (`index.html`, CSS, imágenes).</div>
+                </div>
+                <div class="step">
+                    <strong>Paso 3</strong>
+                    <div>Ir a la configuración del repositorio y activar GitHub Pages.</div>
+                </div>
+                <div class="step">
+                    <strong>Paso 4</strong>
+                    <div>Opcional: configurar un dominio personalizado y HTTPS.</div>
+                </div>
+            </div>
+
+            <a class="button" href="https://pages.github.com/" target="_blank" rel="noopener">Visitar GitHub Pages</a>
+
+            <footer>
+                Recursos: <a href="https://docs.github.com/en/pages" target="_blank" rel="noopener">Documentación oficial</a> · <a href="https://pages.github.com/" target="_blank" rel="noopener">pages.github.com</a>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
